@@ -1,0 +1,46 @@
+package br.com.etecia.myapp;
+
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.material.card.MaterialCardView;
+
+public class AdpterLivros extends RecyclerView.Adapter<AdpterLivros.ViewHolder> {
+    @NonNull
+    @Override
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        return null;
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+
+    }
+
+    @Override
+    public int getItemCount() {
+        return 0;
+    }
+
+    public class ViewHolder extends RecyclerView.ViewHolder {
+
+        MaterialCardView modeloCardLivros;
+        ImageView modeloImgLivros;
+        TextView modeloTitulolivro;
+
+
+        public ViewHolder(@NonNull View itemView) {
+
+            super(itemView);
+            modeloTitulolivro = itemView.findViewById(R.id.modeloTitulolivro);
+            modeloCardLivros = itemView.findViewById(R.id.modeloCardLivros);
+            modeloImgLivros = itemView.findViewById(R.id.modeloImgLivros);
+            
+        }
+    }
+}
